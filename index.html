@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card validation</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>card details</h1>
+        <div class="cards">
+            <img src="./img/am exp.png" alt="american express" height="50px" width="80px">
+            <img src="./img/master.png" alt="master card" height="50px" width="80px">
+            <img src="./img/rupay.png" alt="rupay card" height="50px" width="80px">
+            <img src="./img/visa.png" alt="visa card" height="50px" width="80px">
+        </div>
+        <form name="card-info">
+            <label for="cardNumber">CARD NUMBER</label>
+            <input type="number" name="cardNumber" id="cardNumber" maxlength="16"><span></span>
+            <div class="exv">
+                <label for="expDate">EXP DATE
+                    <input type="text" name="expDate" id="expDate"><span></span></label>
+                    <label for="cvNumber" id="cvn">CV NUMBER
+                        <input type="text" name="cvNumber" id="cvNumber"><span></span></label>
+            </div>
+            <label for="cardOwner">CARD OWNER</label>
+            <input type="text" name="cardOwner" id="cardOwner"><span></span>
+            <button type="submit">Confirm Payment</button>
+        </form>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script>
+        // Prototype object
+var animal = {
+  sound: '',
+  makeSound: function() {
+    console.log(this.sound);
+  }
+};
+
+// Creating an object that inherits from the prototype
+var cat = Object.create(animal);
+cat.sound = 'Meow';
+
+cat.makeSound(); // Output: Meow
+
+    </script>
+</body>
+
+</html>
